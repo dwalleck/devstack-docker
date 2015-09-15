@@ -17,4 +17,4 @@ ADD scripts /opt/scripts
 RUN chmod 755 /opt/scripts/start
 
 CMD ["/opt/scripts/start"]
-#CMD sudo mysql -uroot -ppassword -h127.0.0.1 -P3306 -e 'GRANT ALL PRIVILEGES ON *.* TO '\''root'\''@'\''%'\'' identified by '\''password'\'';'
+CMD sudo mysql -uroot -ppassword -h127.0.0.1 -P3306 -e 'GRANT ALL PRIVILEGES ON *.* TO '\''root'\''@'\''%'\'' identified by '\''password'\'';'
